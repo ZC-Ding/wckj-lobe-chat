@@ -117,6 +117,7 @@
     "title": "연결 검색"
   },
   "searchAgentPlaceholder": "검색 도우미...",
+  "searchEnabled": "OnlineSearch",
   "sendPlaceholder": "채팅 내용 입력...",
   "sessionGroup": {
     "config": "그룹 설정",

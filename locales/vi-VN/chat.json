@@ -117,6 +117,7 @@
     "title": "Tìm kiếm trực tuyến"
   },
   "searchAgentPlaceholder": "Trợ lý tìm kiếm...",
+  "searchEnabled": "OnlineSearch",
   "sendPlaceholder": "Nhập nội dung trò chuyện...",
   "sessionGroup": {
     "config": "Quản lý nhóm",

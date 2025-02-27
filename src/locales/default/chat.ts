@@ -121,6 +121,7 @@ export default {
     title: '联网搜索',
   },
   searchAgentPlaceholder: '搜索助手...',
+  searchEnabled: '联网搜索',
   sendPlaceholder: '输入聊天内容...',
   sessionGroup: {
     config: '分组管理',

@@ -117,6 +117,7 @@
     "title": "Търсене в интернет"
   },
   "searchAgentPlaceholder": "Търсач на помощ...",
+  "searchEnabled": "OnlineSearch",
   "sendPlaceholder": "Напиши съобщението си тук...",
   "sessionGroup": {
     "config": "Управление на групи",

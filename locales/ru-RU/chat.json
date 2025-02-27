@@ -117,6 +117,7 @@
     "title": "Поиск в сети"
   },
   "searchAgentPlaceholder": "Поиск помощника...",
+  "searchEnabled": "OnlineSearch",
   "sendPlaceholder": "Введите сообщение...",
   "sessionGroup": {
     "config": "Управление группами",

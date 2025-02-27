@@ -117,6 +117,7 @@
     "title": "連網搜尋"
   },
   "searchAgentPlaceholder": "搜尋助手...",
+  "searchEnabled": "联网搜索",
   "sendPlaceholder": "輸入聊天內容...",
   "sessionGroup": {
     "config": "分組管理",

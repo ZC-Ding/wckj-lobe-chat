@@ -295,9 +295,20 @@ class ChatService {
       model = findDeploymentName(model, provider);
     }
 
+    // 从 localStorage 中读取 searchEnabled 的值
+    let searchEnabled = 0;
+    if (typeof window !== 'undefined') {
+      const storedValue = localStorage.getItem('searchEnabled');
+      searchEnabled = storedValue ? parseInt(storedValue, 10) : 0;
+    }
     const payload = merge(
       { model: DEFAULT_AGENT_CONFIG.model, stream: true, ...DEFAULT_AGENT_CONFIG.params },
-      { ...res, model },
+      {
+        ...res,
+        enable_search: searchEnabled === 1,
+        model,
+        search_options: { enable_citation: true, enable_source: true, search_strategy: 'pro' },
+      },
     );
 
     /**

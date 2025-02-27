@@ -117,6 +117,7 @@
     "title": "Pesquisa Conectada"
   },
   "searchAgentPlaceholder": "Assistente de busca...",
+  "searchEnabled": "OnlineSearch",
   "sendPlaceholder": "Digite a mensagem...",
   "sessionGroup": {
     "config": "Gerenciar grupos",

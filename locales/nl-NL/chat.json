@@ -117,6 +117,7 @@
     "title": "Online zoeken"
   },
   "searchAgentPlaceholder": "Zoekassistent...",
+  "searchEnabled": "OnlineSearch",
   "sendPlaceholder": "Voer chatbericht in...",
   "sessionGroup": {
     "config": "Groepsbeheer",

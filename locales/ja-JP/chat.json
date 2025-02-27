@@ -117,6 +117,7 @@
     "title": "ネット接続検索"
   },
   "searchAgentPlaceholder": "検索アシスタント...",
+  "searchEnabled": "OnlineSearch",
   "sendPlaceholder": "チャット内容を入力してください...",
   "sessionGroup": {
     "config": "グループ設定",

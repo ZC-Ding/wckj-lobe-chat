@@ -117,6 +117,7 @@
     "title": "جستجوی متصل"
   },
   "searchAgentPlaceholder": "جستجوی دستیار...",
+  "searchEnabled": "OnlineSearch",
   "sendPlaceholder": "نوشتن پیام...",
   "sessionGroup": {
     "config": "مدیریت گروه",

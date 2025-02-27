@@ -117,6 +117,7 @@
     "title": "Wyszukiwanie w sieci"
   },
   "searchAgentPlaceholder": "Wyszukaj pomocnika...",
+  "searchEnabled": "OnlineSearch",
   "sendPlaceholder": "Wpisz treść rozmowy...",
   "sessionGroup": {
     "config": "Zarządzanie grupami",

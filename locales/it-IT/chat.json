@@ -117,6 +117,7 @@
     "title": "Ricerca online"
   },
   "searchAgentPlaceholder": "Assistente di ricerca...",
+  "searchEnabled": "OnlineSearch",
   "sendPlaceholder": "Inserisci il testo della chat...",
   "sessionGroup": {
     "config": "Gestione gruppi",

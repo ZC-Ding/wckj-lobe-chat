@@ -117,6 +117,7 @@
     "title": "Recherche en ligne"
   },
   "searchAgentPlaceholder": "Assistant de recherche...",
+  "searchEnabled": "OnlineSearch",
   "sendPlaceholder": "Saisissez votre message...",
   "sessionGroup": {
     "config": "Gestion des groupes",
