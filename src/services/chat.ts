@@ -303,14 +303,29 @@ class ChatService {
     }
     const payload = merge(
       { model: DEFAULT_AGENT_CONFIG.model, stream: true, ...DEFAULT_AGENT_CONFIG.params },
-      {
-        ...res,
-        enable_search: searchEnabled === 1,
-        model,
-        search_options: { enable_citation: true, enable_source: true, search_strategy: 'pro' },
-      },
+      { ...res, model },
     );
-
+    if (model === 'deepseek-v3' && provider === 'qwen') {
+      // @ts-ignore
+      payload.enable_search = searchEnabled === 1;
+      // @ts-ignore
+      payload.search_options = {
+        enable_citation: true,
+        enable_source: true,
+        search_strategy: 'pro',
+      };
+    }
+    if (model === 'deepseek-r1' && provider === 'qwen') {
+      // @ts-ignore
+      payload.enable_search = searchEnabled === 1;
+      // @ts-ignore
+      payload.search_options = {
+        enable_citation: true,
+        enable_source: true,
+        search_strategy: 'pro',
+      };
+    }
+    console.log('payload', payload);
     /**
      * Use browser agent runtime
      */

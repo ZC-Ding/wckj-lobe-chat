@@ -1,8 +1,9 @@
 import { ChatInputActionBar, Icon } from '@lobehub/ui';
-import { ReactNode, memo, useEffect, useState } from 'react';
 import { Button } from 'antd';
 import { EarthLock } from 'lucide-react';
+import { ReactNode, memo, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+
 import { useAgentStore } from '@/store/agent';
 import { agentSelectors } from '@/store/agent/slices/chat';
 
@@ -38,7 +39,10 @@ const ActionBar = memo<ActionBarProps>(
     rightActions,
   }) => {
     const { t } = useTranslation('chat');
-    const [provider] = useAgentStore((s) => [agentSelectors.currentAgentModelProvider(s)]);
+    const [model, provider] = useAgentStore((s) => [
+      agentSelectors.currentAgentModel(s),
+      agentSelectors.currentAgentModelProvider(s),
+    ]);
     // 状态管理 localStorage 的 searchEnabled 值
     const [searchEnabled, setSearchEnabled] = useState(0);
     // 在 useEffect 中初始化 searchEnabled
@@ -58,7 +62,9 @@ const ActionBar = memo<ActionBarProps>(
     };
     console.log('provider', provider);
     // 只有 provider === 'qwen' 时，才渲染 Button
-    const showButton = provider === 'qwen';
+    const showButton =
+      (provider === 'qwen' && model === 'deepseek-r1') ||
+      (provider === 'qwen' && model === 'deepseek-v3');
     return (
       <ChatInputActionBar
         leftAddons={
